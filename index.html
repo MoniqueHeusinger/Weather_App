@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="weather_container">
+        <article id="weather_data_one">
+          <!-- Stadt -->
+          <p id="city"></p>
+          <!-- Uhrzeit -->
+          <p id="time"></p>
+
+          <!-- Main Container -->
+          <div>
+            <!-- icon -->
+            <p id="icon"></p>
+            <!-- Temperatur -->
+            <p id="temperature"></p>
+            <!-- Wetterlage -->
+            <p id="condition"></p>
+            <!-- Datum -->
+            <p id="date"></p>
+          </div>
+        </article>
+
+        <!-- weitere Wetterdaten -->
+        <article id="weather_data_two">
+          <p id="data_one"></p>
+          <p id="data_two"></p>
+          <p id="data_three"></p>
+          <p id="data_four"></p>
+        </article>
+
+        <!-- optional: Forecast ergänzen (Plan: 5 Tage)-->
+        <article id="forecast">
+          <div id="forecast_day1"></div>
+          <div id="forecast_day2"></div>
+          <div id="forecast_day3"></div>
+          <div id="forecast_day4"></div>
+          <div id="forecast_day5"></div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

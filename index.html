@@ -9,35 +9,35 @@
   <body>
     <main>
       <section id="weather_container">
-        <h1>Weather App</h1>
+        <!-- <h1>Weather App</h1> -->
         <article id="weather_data_one">
-          <!-- Stadt -->
-          <p id="city"></p>
-          <!-- Uhrzeit -->
-          <p id="time"></p>
+          <!-- City -->
+          <p id="city">London</p>
+          <!-- Time -->
+          <p id="time">13:30</p>
 
-          <!-- Main Container -->
-          <div>
-            <!-- icon -->
-            <p id="icon"></p>
-            <!-- Temperatur -->
-            <p id="temperature"></p>
-            <!-- Wetterlage -->
-            <p id="condition"></p>
-            <!-- Datum -->
-            <p id="date"></p>
+          <!-- Main weather container -->
+          <div class="data_style_general">
+            <!-- Icon -->
+            <p id="icon">🌧️</p>
+            <!-- Temperature -->
+            <p id="temperature">12 °C</p>
+            <!-- Weather condition -->
+            <p id="condition">rainy</p>
+            <!-- Date -->
+            <p id="date">Monday, 20. Nov 2023</p>
           </div>
         </article>
 
-        <!-- weitere Wetterdaten -->
-        <article id="weather_data_two">
-          <p id="data_one"></p>
-          <p id="data_two"></p>
-          <p id="data_three"></p>
-          <p id="data_four"></p>
+        <!-- Further weather data -->
+        <article id="weather_data_two" class="data_style_general data_grid">
+          <p id="data_one"><span>💨</span>Fresh Breeze 10 km/h</p>
+          <p id="data_two"><span>💦</span>68%</p>
+          <p id="data_three"><span>☀️</span>7:59</p>
+          <p id="data_four"><span>🌖</span>17:40</p>
         </article>
 
-        <!-- optional: Forecast ergänzen (Plan: 5 Tage)-->
+        <!-- optional: add forecast (plan: 5 Tage)-->
         <article id="forecast">
           <div id="forecast_day1"></div>
           <div id="forecast_day2"></div>

@@ -1,3 +1,7 @@
+/* ****************************
+            Generals
+********************************/
+
 @font-face {
     font-family: "Raleway";
     src: url("./../font/Raleway-Regular.ttf");
@@ -8,7 +12,6 @@
     src: url("./../font/Raleway-Bold.ttf");
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -17,35 +20,42 @@
 
 :root {
     --primary: #051329;
-    --secondary: #2E8A99;
+    /* --secondary: #2E8A99; */
+}
+
+body {
+    height: 97.2vh;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 50%, rgba(92,101,115,0.8) 87%), url("./../img/jakub-kriz-06lv_LBX3pk-unsplash.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Raleway";
     color: white;
 }
 
-
-/* **********************
-    weather_container
-********************** */
+/* *****************************
+        weather_container
+******************************* */
 main section {
-    margin: 20px auto;
+    margin: 20px auto 10px auto;
     padding-top: 30px;
-    width: 370px;
-    height: 720px;
+    width: 360px;
+    height: 690px;
     border-radius: 30px;
-    border: 4px solid rgba(150, 150, 150, 0.786);
+    border: 4px solid rgba(203, 203, 203, 0.746);
     background-color: var(--primary);
     text-align: center;
     box-shadow: 7px 7px 7px 0px rgba(31, 31, 31, 0.8);
 }
 
 .data_style_general {
-    margin: 30px auto 0px auto;
+    margin: 20px auto 0px auto;
     width: 80%;
 }
 
-/* ****************************
-            Searchbar
-********************************/
+/* *****************************
+        Searchbar
+******************************* */
 
 main section article:nth-of-type(1) form {
     margin-bottom: 20px;;
@@ -56,18 +66,56 @@ main section article:nth-of-type(1) form {
 main section article:nth-of-type(1) form input {
     height: 30px;
     border-radius: 20px;
+    border: none;
 }
 
 /* Searchinput */
 main section article:nth-of-type(1) form input[type=text] {
     flex-grow: 3;
+    font-family: "Raleway";
+    font-size: 1rem;
+    text-indent: 1rem;
+    background-color: #ebededdc;
+    box-shadow: inset 2px 2px 2px 0px rgba(0,0,0,0.7);
+    outline: none;
 }
 
-/* Submit Button */
-main section article:nth-of-type(1) form input[type=submit] {
-    flex-basis: 10%;
-    background: linear-gradient(320deg, rgb(225, 225, 226) 90%, rgba(255, 255, 255, 0.65) 52%);
+/*  => focus - Searchinput */
+main section article:nth-of-type(1) form input[type=text]:focus {
+    background-color: #eceeeef0;
 }
+
+main section article:nth-of-type(1) form button {
+    flex-basis: 12%;
+    border: none;
+    border-radius: 50%;
+    /* background-color: #ebededdc; */
+    box-shadow: inset -2px -2px 2px 0px rgba(0,0,0,0.7);
+    background: rgb(86,139,159);
+    background-color: #fbc737;
+}
+
+
+/* => hover - Button */
+main section article:nth-of-type(1) form button:hover {
+    cursor: pointer;   
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(253,216,52,0.7) 18%, rgba(94,99,107,0.7912340255591055) 87%);
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  user-select: none;
+}
+
+.search_style {
+    padding: 1%;
+    color: rgba(0, 0, 0, 0.741);
+}
+
 
 /* ******************************************
     1st data block ---> weather_data_one
@@ -90,18 +138,17 @@ main section article:nth-of-type(2) > div {
     border-radius: 20px;
     box-shadow: inset -1px -1px 5px 0px rgba(164, 181, 184, 0.7);
     background: linear-gradient(320deg, rgba(5,19,41,1) 40%, rgba(31,110,140,0.65) 92%);
-
 }
 
 /* => Icon */
-main section article:nth-of-type(2) > div p:nth-of-type(1) {
+main section article:nth-of-type(2) > div img {
     /* ACHTUNG: wenn echtes Icon eingefügt ist, ggf. margin anpassen!!!!  */
     margin-top: -15px;
     font-size: 6rem;
 }
 
 /* => Temperature */
-main section article:nth-of-type(2) > div p:nth-of-type(2) {
+main section article:nth-of-type(2) > div p:nth-of-type(1) {
     /* ACHTUNG: wenn echtes Icon eingefügt ist, ggf. anpassen!!!!  */
     margin-top: -10px;
     font-family: "Raleway-Bd";
@@ -109,18 +156,18 @@ main section article:nth-of-type(2) > div p:nth-of-type(2) {
 }
 
 /* ===> Span °C */
-main section article:nth-of-type(2) > div p:nth-of-type(2) span {
+main section article:nth-of-type(2) > div p:nth-of-type(1) span {
     font-size: 2rem;
 }
 
 /* => Weather condition */
-main section article:nth-of-type(2) > div p:nth-of-type(3) {
+main section article:nth-of-type(2) > div p:nth-of-type(2) {
     margin-bottom: 8px;
     font-size: 1.5rem;;
 }
 
 /* => Date */
-main section article:nth-of-type(2) > div p:nth-of-type(4) {}
+main section article:nth-of-type(2) > div p:nth-of-type(3) {}
 
 /* ******************************************
     2nd data block ---> weather_data_two
@@ -133,7 +180,7 @@ main section article:nth-of-type(2) > div p:nth-of-type(4) {}
     gap: 10px;
 }
 
-.data_grid > p {
+.data_grid > div {
     padding: 10px;
     display: flex;
     font-size: 1.1rem;
@@ -142,19 +189,37 @@ main section article:nth-of-type(2) > div p:nth-of-type(4) {}
     background: linear-gradient(320deg, rgba(5,19,41,1) 40%, rgba(31,110,140,0.65) 92%);
 }
 
-.data_grid > p:nth-of-type(1) {
+.data_grid > div:nth-of-type(1) {
     grid-column: 1 / 4;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.data_grid > p:nth-of-type(2), 
-.data_grid > p:nth-of-type(3), 
-.data_grid > p:nth-of-type(4) {
+.data_grid > div:nth-of-type(2), 
+.data_grid > div:nth-of-type(3), 
+.data_grid > div:nth-of-type(4) {
     flex-direction: column;
     gap: 10px;
 }
 
-.data_grid > p > span {
+.data_grid > div > span {
     font-size: 28px;
+}
+
+
+/* ******************************************
+    Footer
+********************************************** */
+footer {
+    color: var(--primary);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+footer p:nth-of-type(2),
+footer p:nth-of-type(2) a {
+    font-size: 0.7rem;
+    font-style: italic;
+    text-decoration: none;
+    color: inherit;
 }

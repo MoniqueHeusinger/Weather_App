@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <main>
@@ -13,34 +17,59 @@
         <article class="data_style_general" id="searchbar">
           <form onsubmit="return false">
             <input type="text" name="searchInput" id="searchInput" />
-            <input type="submit" value="▷" id="searchButton"/>
+style_css
+            <button>
+              <span class="material-symbols-outlined search_style">
+                search
+              </span>
+            </button>
+
+            
+ main
           </form>
         </article>
+
+        <!-- Display Current City + Time -->
         <article id="weather_data_one">
           <!-- City -->
-          <p id="city">London</p>
+          <p id="city">Pleasantville</p>
           <!-- Time -->
-          <p id="time">13:30</p>
+          <p id="time">12:30</p>
 
           <!-- Main weather container -->
           <div class="data_style_general">
             <!-- Icon -->
-            <p id="icon">🌧️</p>
+            <img id="icon" />
             <!-- Temperature -->
-            <p id="temperature">12 <span>°C</span></p>
+            <p id="temperature">24 <span>°C</span></p>
             <!-- Weather condition -->
-            <p id="condition">rainy</p>
+            <p id="condition">sunny</p>
             <!-- Date -->
-            <p id="date">Monday, 20. Nov 2023</p>
+            <p id="date">Friday, 22. May 1959</p>
           </div>
         </article>
 
         <!-- Further weather data -->
         <article id="weather_data_two" class="data_style_general data_grid">
-          <p id="windspeed"><span>💨</span>Fresh Breeze 10 km/h</p>
-          <p id="humidity"><span>💦</span>68%</p>
-          <p id="sunrise"><span>☀️</span>7:59</p>
-          <p id="sunset"><span>🌖</span>17:40</p>
+style_css
+          <div>
+            <span>💨</span>
+            <p id="data_one">Fresh Breeze 10 km/h</p>
+          </div>
+          <div>
+            <span>💦</span>
+            <p id="data_two">0%</p>
+          </div>
+          <div>
+            <span>☀️</span>
+            <p id="data_three">6:45</p>
+          </div>
+          <div>
+            <span>🌖</span>
+            <p id="data_four">21:30</p>
+          </div>
+
+ main
         </article>
 
         <!-- optional: add forecast (plan: 5 Tage)-->
@@ -53,7 +82,22 @@
         </article>
       </section>
     </main>
+    <footer>
+      <p>Made with ❤️ by Suat Ucar & Monique Heusinger</p>
 
+      <p>
+        Bildreferenz:
+        <a
+          href="https://unsplash.com/de/@jakubkriz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Jakub Kriz</a
+        >
+        auf
+        <a
+          href="https://unsplash.com/de/fotos/%ED%92%8D%EA%B2%BD-%EC%82%AC%EC%A7%84%EC%97%90%EC%84%9C-%EB%82%AE-%EB%8F%99%EC%95%88%EC%9D%98-%ED%9D%B0-%EA%B5%AC%EB%A6%84-06lv_LBX3pk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+          >Unsplash</a
+        >
+      </p>
+    </footer>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

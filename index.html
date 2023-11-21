@@ -9,7 +9,13 @@
   <body>
     <main>
       <section id="weather_container">
-        <!-- <h1>Weather App</h1> -->
+        <!-- Searchbar -->
+        <article class="data_style_general" id="searchbar">
+          <form onsubmit="return false">
+            <input type="text" name="searchInput" id="searchInput" />
+            <input type="submit" value="▷" />
+          </form>
+        </article>
         <article id="weather_data_one">
           <!-- City -->
           <p id="city">London</p>
@@ -21,7 +27,7 @@
             <!-- Icon -->
             <p id="icon">🌧️</p>
             <!-- Temperature -->
-            <p id="temperature">12 °C</p>
+            <p id="temperature">12 <span>°C</span></p>
             <!-- Weather condition -->
             <p id="condition">rainy</p>
             <!-- Date -->

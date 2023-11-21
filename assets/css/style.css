@@ -27,12 +27,15 @@
     weather_container
 ********************** */
 main section {
-    margin: 30px auto;
+    margin: 20px auto;
+    padding-top: 30px;
     width: 370px;
     height: 720px;
     border-radius: 30px;
+    border: 4px solid rgba(150, 150, 150, 0.786);
     background-color: var(--primary);
     text-align: center;
+    box-shadow: 7px 7px 7px 0px rgba(31, 31, 31, 0.8);
 }
 
 .data_style_general {
@@ -40,24 +43,49 @@ main section {
     width: 80%;
 }
 
-/*
-******************************************
+/* ****************************
+            Searchbar
+********************************/
+
+main section article:nth-of-type(1) form {
+    margin-bottom: 20px;;
+    display: flex;
+    gap: 10px;
+}
+
+main section article:nth-of-type(1) form input {
+    height: 30px;
+    border-radius: 20px;
+}
+
+/* Searchinput */
+main section article:nth-of-type(1) form input[type=text] {
+    flex-grow: 3;
+}
+
+/* Submit Button */
+main section article:nth-of-type(1) form input[type=submit] {
+    flex-basis: 10%;
+    background: linear-gradient(320deg, rgb(225, 225, 226) 90%, rgba(255, 255, 255, 0.65) 52%);
+}
+
+/* ******************************************
     1st data block ---> weather_data_one
 ********************************************** */
 
  /* City */
-main section article:nth-of-type(1) > p:nth-of-type(1) {
-    padding-top: 50px;
+main section article:nth-of-type(2) > p:nth-of-type(1) {
+    /* padding-top: 50px; */
     font-size: 2.5rem;
 }
 
 /* Time */
-main section article:nth-of-type(1) > p:nth-of-type(2) {
+main section article:nth-of-type(2) > p:nth-of-type(2) {
     font-size: 1.2rem;
 }
 
 /* Main weather container */
-main section article:nth-of-type(1) > div {
+main section article:nth-of-type(2) > div {
     padding-block: 40px;
     border-radius: 20px;
     box-shadow: inset -1px -1px 5px 0px rgba(164, 181, 184, 0.7);
@@ -66,28 +94,33 @@ main section article:nth-of-type(1) > div {
 }
 
 /* => Icon */
-main section article:nth-of-type(1) > div p:nth-of-type(1) {
+main section article:nth-of-type(2) > div p:nth-of-type(1) {
     /* ACHTUNG: wenn echtes Icon eingefügt ist, ggf. margin anpassen!!!!  */
     margin-top: -15px;
     font-size: 6rem;
 }
 
 /* => Temperature */
-main section article:nth-of-type(1) > div p:nth-of-type(2) {
+main section article:nth-of-type(2) > div p:nth-of-type(2) {
     /* ACHTUNG: wenn echtes Icon eingefügt ist, ggf. anpassen!!!!  */
     margin-top: -10px;
     font-family: "Raleway-Bd";
     font-size: 3.5rem;
 }
 
+/* ===> Span °C */
+main section article:nth-of-type(2) > div p:nth-of-type(2) span {
+    font-size: 2rem;
+}
+
 /* => Weather condition */
-main section article:nth-of-type(1) > div p:nth-of-type(3) {
+main section article:nth-of-type(2) > div p:nth-of-type(3) {
     margin-bottom: 8px;
     font-size: 1.5rem;;
 }
 
 /* => Date */
-main section article:nth-of-type(1) > div p:nth-of-type(4) {}
+main section article:nth-of-type(2) > div p:nth-of-type(4) {}
 
 /* ******************************************
     2nd data block ---> weather_data_two
@@ -97,11 +130,11 @@ main section article:nth-of-type(1) > div p:nth-of-type(4) {}
 .data_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
 }
 
 .data_grid > p {
-    padding: 20px;
+    padding: 10px;
     display: flex;
     font-size: 1.1rem;
     border-radius: 12px;
@@ -123,5 +156,5 @@ main section article:nth-of-type(1) > div p:nth-of-type(4) {}
 }
 
 .data_grid > p > span {
-    font-size: 32px;
+    font-size: 28px;
 }

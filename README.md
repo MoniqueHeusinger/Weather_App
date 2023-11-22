@@ -6,7 +6,7 @@ The landing page shows the fictional weather data of the heavenly city of Pleasa
 
 To view the weather in another city, you can use the top search bar (enter the city or country or zip code for a result).
 
-<img src="./assets/misc/searchbar.png" width=200px height=200px>
+<img src="./assets/misc/searchbar.png" width=200px>
 
 The App uses a weather API (Open Weather API - https://openweathermap.org/).
 

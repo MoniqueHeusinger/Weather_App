@@ -6,7 +6,7 @@ The landing page shows the fictional weather data of the heavenly city of Pleasa
 
 To view the weather in another city, you can use the top search bar (enter the city or country or zip code for a result).
 
-<img src="./misc/searchbar.png" width=200px height=200px>
+<img src="./assets/misc/searchbar.png" width=200px height=200px>
 
 The App uses a weather API (Open Weather API - https://openweathermap.org/).
 
@@ -26,7 +26,7 @@ This project was created as part of a coding bootcamp (fullstack development) at
 ## Screenshot 📸
 
 <br>
-<img src="./../assets/misc/screenshot_app.png" width=400>
+<img src="./assets/misc/screenshot_app.png" width=400>
 
 ## Tech Stack
 
@@ -39,4 +39,4 @@ HTML5, CSS3, Java Script
 
 ## Presentation 📊📽️
 
-[Presentation Project The Weather App](./misc/weather_app_presentation.mp4)
+[Presentation Project The Weather App](./assets/misc/weather_app_presentation.mp4)

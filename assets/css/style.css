@@ -37,7 +37,8 @@ body {
         weather_container
 ******************************* */
 main section {
-    margin: 20px auto 10px auto;
+    /* margin: 20px auto 10px auto; */
+    margin: 5% auto;
     padding-top: 30px;
     width: 360px;
     height: 690px;
